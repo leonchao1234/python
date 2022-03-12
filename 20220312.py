@@ -1,1 +1,1 @@
-dkfiofk
+print("hello")
