@@ -1,0 +1,7 @@
+print(1 + 2 + 3 + 4 + 5)
+print(1 * 2 - 3 / 4)
+print("2022" + "03" + "26")
+ans = input("請輸入你的姓名:")
+print("你的名子是:" + ans)
+ans = input("請輸入你的星座:")
+print("哦哦哦哦哦哦哦:" + ans)
