@@ -15,4 +15,3 @@
 #   *
 #   *
 # """
-print("please input a number:")
