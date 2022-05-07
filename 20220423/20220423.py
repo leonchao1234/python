@@ -30,7 +30,6 @@
 #     turtle.right(144)
 # turtle.end_fill()
 # turtle.done()
-
 number = int(input("please input number"))
 if (number % 2) == 0:
     print("The number is even")
