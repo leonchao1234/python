@@ -53,5 +53,7 @@ while True:
         a = [y]
     elif x == 2:
         print(a)
+    if y == y:
+        input("it was already in the list")
     else:
         break
