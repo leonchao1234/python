@@ -45,11 +45,12 @@
 # index =1.index ('a')
 # print(index)
 #  input("1.想加入菜單的果汁 2.顯示出目前所有果汁 3.離開系統")
-a = []
+
 while True:
     x = input("1.想加入菜單的果汁 2.顯示出目前所有果汁 3.離開系統:")
     if x == 1:
         y = input("請輸入想加入的果汁")
+        a = [y]
     elif x == 2:
         print(a)
     else:
