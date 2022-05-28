@@ -45,15 +45,24 @@
 # index =1.index ('a')
 # print(index)
 #  input("1.想加入菜單的果汁 2.顯示出目前所有果汁 3.離開系統")
+def add_juice(a_list):
+    a_list=[]
 
+def show_juice(a_list):
+
+
+a=[]
 while True:
-    x = input("1.想加入菜單的果汁 2.顯示出目前所有果汁 3.離開系統:")
-    if x == 1:
-        y = input("請輸入想加入的果汁")
-        a = [y]
-    elif x == 2:
-        print(a)
-    if y == y:
-        input("it was already in the list")
-    else:
-        break
+    x=input("1.想加入菜單的果汁 \n 2.顯示出目前所有果汁 \n3.離開系統")
+    if x==1:
+       a=add_juice(a)
+        # y=input("請輸入想加入果汁")
+        # if not (y in a):
+        #     a.append(y)
+        elif x==2:
+            print(a)
+        else:
+            print("掰掰")
+            break
+        
+
