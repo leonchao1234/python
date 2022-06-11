@@ -46,23 +46,24 @@
 # print(index)
 #  input("1.想加入菜單的果汁 2.顯示出目前所有果汁 3.離開系統")
 def add_juice(a_list):
-    a_list=[]
+    y=input("請輸入想加入果汁")
+    if not (y in a):
+        a.append(y)   
+    return a_list
 
 def show_juice(a_list):
-
-
-a=[]
+    print(a_list)
+    
+def remove_juice(a_list):
+    y=input("請輸入想刪除的果汁：")
+    if y in a_list:
+        a_list.remove(y)
+    return a_list
+a = []
+op=[add_juice ,add_juice , show_juice , remove_juice]
 while True:
-    x=input("1.想加入菜單的果汁 \n 2.顯示出目前所有果汁 \n3.離開系統")
-    if x==1:
-       a=add_juice(a)
-        # y=input("請輸入想加入果汁")
-        # if not (y in a):
-        #     a.append(y)
-        elif x==2:
-            print(a)
-        else:
-            print("掰掰")
-            break
-        
-
+    x=int(input("1.想加入菜單的果汁 \n 2.顯示出目前所有果汁 \n3.刪除特定果汁 \n4.離開系統"))
+    if x== len(op)+1:
+        print("掰掰")
+        break
+    a=op[x-1](a)
