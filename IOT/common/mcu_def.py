@@ -1,4 +1,3 @@
-import webrepl
 import network
 #from umqqt.simple import MQTTCLient
 
@@ -23,7 +22,6 @@ class mcu_fun:
         self.ip = None
 
     def connect_ap(self, ssid, pwd):
-        webrepl.stop()
         wlan = network.WLAN(network.STA_IF)
         ap = network.WLAN(network.AP_IF)
         ap.active(False)
@@ -33,7 +31,6 @@ class mcu_fun:
         while not (wlan.isconnected()):
             pass
 
-        webrepl.start()
         print('network config:', wlan.ifconfig())
         self.ip = wlan.ifconfig()[0]
         #return self.ip
